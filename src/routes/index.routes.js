@@ -1,4 +1,5 @@
 import { Router } from "express";
+import planetasRoutes from "./planetas.routes.js";
 
 const routes = Router();
 
@@ -7,8 +8,6 @@ routes.get("/", (req, res) => {
 })
 
 
-routes.use("/doces",docesRoutes)
-routes.use("/filmes",filmesRoutes)
-
+routes.use("/planetas", planetasRoutes);
 
 export default routes
